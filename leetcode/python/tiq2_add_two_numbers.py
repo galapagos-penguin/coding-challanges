@@ -14,7 +14,7 @@ class Solution:
             s2 = str(l2.val) + s2
             l2 = l2.next
         s = str(int(s1) + int(s2))
-        
+
         if len(s) != 1:
             temp1 = ListNode(val=int(s[0]), next=None)
             if len(s) > 2:

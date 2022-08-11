@@ -19,7 +19,7 @@ char * copyStr(char message[], unsigned zombies, char message2[]) {
     char * copy;
     copy = (char *)malloc(len + 1); // dynamically allocate memory
                            /* One more char must be allocated for the null char */
-    size_t i; 
+    size_t i;
     for(i = 0; i < len; i++) {
         if (i < strlen(message)){
             copy[i] = message[i];  // copy characters
@@ -40,7 +40,7 @@ char * copyStr(char message[], unsigned zombies, char message2[]) {
 char* zombie_shootout(unsigned zombies, unsigned distance, unsigned ammo) {
     // int / signed / signed int -> range of −2,147,483,648 to 2,147,483,647
     // unsigned / unsigned int -> range of 0 to 4,294,967,295
-    // float 6 decimal digits, double 15 decimal digits. 
+    // float 6 decimal digits, double 15 decimal digits.
     // printf("%u\n", remaining_zombies);
     // printf("%f\n", remaining_distance);
     unsigned remaining_zombies = zombies;
